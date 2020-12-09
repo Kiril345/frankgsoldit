@@ -1,0 +1,829 @@
+/* arrange elements*/
+
+#gmapSearch2 {
+    width: 100%;
+  }
+  
+  #gmapSearch2 div.filter {
+    float:left;
+    width: 180px;
+   /* border:1px solid black;*/
+    padding:10px;
+  }
+  #gmapSearch2 div.maparea {
+    float:left;  
+    width: 750px;
+    padding: 10px;
+  }
+  
+  #map2 {
+    height: 500px;
+    color:#000000;
+  }
+  
+  
+  #gmapSearch2 ul.tabs {
+     margin-left: 205px;
+     margin-right: 35px;
+  }
+  
+  /*Filter elemets */
+  
+  .ui-autocomplete-loading, .UploadingNow {
+    background: url(../images/progress_ani.gif) no-repeat center right;
+  }
+  
+  
+  .ui-state-hover-current {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #FDF5CE;
+    background-origin: padding-box;
+    border-bottom-color: #FBCB09;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: #FBCB09;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: #FBCB09;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: #FBCB09;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    color: #C77405;
+    cursor: default;
+    display: block;
+    float: none;
+    font-family: 'Trebuchet MS', Tahoma, Verdana, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    height: 19px;
+    line-height: 19px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-bottom: -1px;
+    margin-left: -1px;
+    margin-right: -1px;
+    margin-top: -1px;
+    outline-color: #C77405;
+    outline-style: none;
+    outline-width: 0px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    text-decoration: none;
+  }
+  
+  div.filter input {
+    height: 25px; width: 180px;
+  }
+  
+  
+  #gmapSearch2 #filterTools li {
+    float:left;
+    width: 100%;
+    margin-left: 0px;
+  }
+  
+  #filterTools ul {
+    list-style-type: none;
+  }
+  
+  #filterTools li a{
+    padding:9px 0px 8px 22px;
+    margin-left:0px;
+    display:block;
+    background-image: url(../images/uncheck-box.png) ;
+    background-repeat: no-repeat;
+    background-position: 3px 5px;  
+    text-decoration: none;
+  
+  }
+  #filterTools li a:hover{
+    text-decoration: none;
+  }
+  
+  #filterTools li a span {
+    padding:3px 0px 8px 33px;
+  }
+  
+  #filterTools a.selected{
+    background-color: #E5E5E5;
+    background-image: url(../images/checked-box.png) ;
+  
+  }
+  
+  
+  
+  #filterTools li a.detached span {
+    background-image: url(../icons_small/detached.png) ;
+    background-repeat: no-repeat;
+    background-position: 3px center;
+  }
+  
+  #filterTools li a.semidetached span {
+    background-image: url(../icons_small/semiDetached.png) ;
+    background-repeat: no-repeat;
+    background-position: 3px center;
+  }
+  
+  #filterTools li a.condo span {
+    background-image: url(../icons_small/condo.png) ;
+    background-repeat: no-repeat;
+    background-position: 3px center;
+  }
+  
+  #filterTools li a.townhomes span {
+    background-image: url(../icons_small/townHouse.png) ;
+    background-repeat: no-repeat;
+    background-position: 3px center;
+  }
+  
+  #filterTools li a.other span {
+    background-image: url(../icons_small/others.png) ;
+    background-repeat: no-repeat;
+    background-position: 3px center;
+  }
+  
+  #filterTools li a.selected span {
+    background-color: #E5E5E5;
+  }
+  
+  
+  
+  /*Control part*/
+  
+  #mapTypeControl {
+    height: 25px;
+    text-align: right;
+  }
+  #mapTypeControl a {
+    display: inline;
+    float: right;
+    padding: 0px 5px 0px 5px;
+    margin: 0px 5px 0px 5px;
+  }
+  #gmapSearch2 #mapTypeControl a{
+      display:none;
+  }
+  
+  #mapTypeControl a.selected, #mapTypeControl a:hover {
+    border-bottom: 2px solid #E5E5E5;
+  }
+  
+  #mapTypeControl a.streetview {
+  position: relative;
+  top: 29px;
+  z-index: 10;
+  right: -130px;
+  float: right;
+  color: white;
+  font-weight:bold;
+  opacity:0.9;
+  filter:alpha(opacity=90);
+  background:#999 url('../images/closegmap1.png') no-repeat 100% 1px;
+  padding:1px 20px 0px 5px;
+  font-size:11px;
+  border:3px solid #9ea1b9;
+  border-top:none;
+  font-family:Arial, Helvetica, sans-serif;
+  line-height:15px!important;
+  display: none;
+  }
+  
+  #mapTypeControl a.streetview:hover{
+      text-decoration:none;
+    color:#000;
+      background:#999 url('../images/closegmap.png') no-repeat 100% 0;
+  }
+  
+  /* Service  Tools part */
+  #mapTools {
+    padding-top:5px;
+  }
+  
+  #mapTools li {
+    float:left;
+    width: 24%;
+    margin-left: 2px !important;
+  }
+  
+  #mapTools ul {
+    list-style-type: none;
+  }
+  
+  #mapTools li a{
+    padding:9px 0px 8px 22px;
+    margin-left:0px;
+    display:block;
+    background-image: url(../images/uncheck-box.png) ;
+    background-repeat: no-repeat;
+    background-position: 3px 5px;  
+    text-decoration: none;
+  
+  }
+  #mapTools li a:hover{
+    text-decoration: none;
+  }
+  
+  #mapTools li a span {
+    padding:3px 0px 8px 33px;
+  }
+  
+  #mapTools a.selected{
+    background-color: #E5E5E5;
+    background-image: url(../images/checked-box.png) ;
+  
+  }
+  
+  #mapTools a.school span{
+    background-image: url(../icons_small/school.png) ;
+    background-repeat: no-repeat;
+    background-position: 3px center;
+  }
+  
+  #mapTools a.grocerystores span{
+    background-image: url(../icons_small/grocery.png) ;
+    background-repeat: no-repeat;
+    background-position: 3px center;
+  }
+  
+  #mapTools a.banks span{
+    background-image: url(../icons_small/bank.png) ;
+    background-repeat: no-repeat;
+    background-position: 3px center;
+  }
+  
+  #mapTools a.coffee span{
+    background-image: url(../icons_small/coffee.png) ;
+    background-repeat: no-repeat;
+    background-position: 3px center;
+  }
+  
+  #mapTools a.parks span{
+    background-image: url(../icons_small/park.png) ;
+    background-repeat: no-repeat;
+    background-position: 3px center;
+  }
+  
+  #mapTools a.restaurants span{
+    background-image: url(../icons_small/restaurant.png) ;
+    background-repeat: no-repeat;
+    background-position: 3px center;
+  }
+  
+  #mapTools a.gas span{
+    background-image: url(../icons_small/gazstation.png) ;
+    background-repeat: no-repeat;
+    background-position: 3px center;
+  }
+  
+  #mapTools a.daycares span{
+    background-image: url(../icons_small/daycare.png) ;
+    background-repeat: no-repeat;
+    background-position: 3px center;
+  }
+  
+  #mapTools a.hospitals span{
+    background-image: url(../icons_small/hospital.png) ;
+    background-repeat: no-repeat;
+    background-position: 3px center;
+  }
+  
+  #mapTools a.shoppingcentres span{
+    background-image: url(../icons_small/shoppingmall.png) ;
+    background-repeat: no-repeat;
+    background-position: 3px center;
+  }
+  
+  #mapTools a.attractions span{
+    background-image: url(../icons_small/themepark.png) ;
+    background-repeat: no-repeat;
+    background-position: 3px center;
+  }
+  
+  #mapTools a.bus span{
+    background-image: url(../icons_small/bus.png) ;
+    background-repeat: no-repeat;
+    background-position: 3px center;
+  }
+  
+  /* Property in a bubble 
+  
+  #BubbleInfo div br
+      {clear:none !important;}
+  
+  #BubbleInfo,#BubbleInfo h3 {
+    color: #000000;
+  }	*/
+  
+  /* Bubble settings */
+  #BubbleInfo {
+    max-height: 340px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px 15px 0px 15px;
+    background: url('/modules/gmapSearch2/images/bubble/newbubblebg.png') repeat-y;
+  }
+  
+  .bubbletop{
+  height:15px;
+  background:url('/modules/gmapSearch2/images/bubble/t.png') repeat-x;
+  width:320px;
+  margin-left:15px;	
+  }
+  .bubbletopleft{
+      background:url('/modules/gmapSearch2/images/bubble/tl.png') no-repeat;
+      width:19px;
+      height:15px;
+      position:absolute;
+      top:0px;
+      left:0px;
+  }
+  .bubblebottomleft{
+      background:url('/modules/gmapSearch2/images/bubble/bl.png') no-repeat;
+      width:19px;
+      height:29px;
+      position:absolute;
+      bottom:0px;
+      left:0px;
+  }
+  .bubblebottom{
+  height:29px;
+  background:url('/modules/gmapSearch2/images/bubble/b.png') repeat-x;
+  width:300px;
+  margin-left:15px;	
+  }
+  .bubblebottomright{
+      background:url('/modules/gmapSearch2/images/bubble/br.png') no-repeat;
+      width:19px;
+      height:29px;
+      position:absolute;
+      bottom:0px;
+      right:6px;
+  }
+  .bubblebeak{
+      background:url('/modules/gmapSearch2/images/bubble/beak.png') no-repeat;
+      width:30px;
+      height:29px;
+      position:absolute;
+      bottom:0px;
+      left:155px;
+  }
+  
+  /* zebra*/
+  #BubbleInfo div.odd {
+    background-color: #E8F5F8;
+  }
+  
+  /* Property Details via Bubble popup */
+  
+  div.gmapSearchProperty {
+    padding: 3px 3px;
+    margin: 0px 4px;
+    width:auto;
+  }
+  
+  div.gmapSearchProperty *{
+      font-family: sans-serif;
+  }
+  div.gmapSearchProperty div.left {
+    float: left;
+    text-align: center;
+  }
+  div.gmapSearchProperty div.picture div.pSaleStatus{
+    width: 156px;
+    height: 106px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    margin-top: -108px;
+  }
+  div.gmapSearchProperty div.picture div.pSaleStatus img{
+    padding-left: 0px;
+  }
+  div.gmapSearchProperty div.picture img.pImage {
+    padding-left: 0px;
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+    background-color: #F5F5F5;
+    padding: 2px;
+    margin: 2px;
+  }
+  
+  div.gmapSearchProperty div.price {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 170px;
+    padding-top: 0px;
+    z-index:-20;
+    color: #CA0711;
+  }
+  div.gmapSearchProperty div.details {
+    margin-left: 170px;
+    padding-top: 4px;
+    font-size: 11px;
+    line-height: 13px;
+  }
+  div.gmapSearchProperty div.details div.style {
+    color: green;
+    font-size: 12px;
+    font-weight: bold;
+    display:none;
+  }
+  div.gmapSearchProperty div.address {
+    padding-top: 4px;
+    margin-left: 170px;
+    line-height: 11px;
+    color: green;
+    font-size: 12px;
+    font-weight: bold;
+  
+  }
+  div.gmapSearchProperty div.address h3 {
+    font-size: 10px;
+    font-weight: bold;
+  
+  }
+  div.gmapSearchProperty div.address span {
+    font-size: 10px;
+    font-weight: 100;
+  
+  }
+  div.gmapSearchProperty div.moredetails {
+    padding-top: 4px;
+    margin-left: 170px;
+   }
+  div.gmapSearchProperty div.moredetails a {
+    font-weight: bold;
+    font-size: 11px;
+    color: blue;
+  }
+  
+  div.gmapSearchProperty ul.action {
+    float: right;
+    list-style: none;
+    padding-right: 0px;
+  }
+  
+  .gm-style a{
+      font-size:13px;
+  }
+  
+  
+  #map2 .infoBox .gs-title{
+  width: 320px;
+  padding: 10px 0px 0px 10px;
+  background: #fff;
+  font-size:13px;
+  }
+  #map2 .infoBox .gs-address,
+  #map2 .infoBox .amenty-phone{
+  width: 320px;
+  padding-left: 10px;
+  background: #fff;
+  }
+  
+  
+  #map2 .infoBox .gs-bottom{
+  width: 330px;
+  margin-bottom: 10px;
+  height:20px;
+  display: block;
+  background:url('/modules/gmapSearch2/images/bubble/commonbeak.png') no-repeat left bottom;
+  }
+  
+  
+  
+  
+  /* Hide the latitude and longitude from the property display */
+  #BubbleInfo div.gmapSearchProperty .viewStreet {
+    height:22px;  
+  }
+  
+  div.gmapSearchProperty .viewStreet .latitude,
+  div.gmapSearchProperty .viewStreet .longitude,
+  div.PropertyList .viewStreet .latitude,
+  div.PropertyList .viewStreet .longitude {
+    display:none;
+  }
+  
+  /* custom info window */
+  
+  .ajaxLoadingWaitMessage {
+    background-position-x: 50%;
+    background-position-y: 50%;
+    height: 30px;
+  }
+  
+  
+  #extInfoWindow_coda{
+    min-width: 320px;
+    width: auto;
+  }
+  #extInfoWindow_coda_contents{
+    background-color: #FFF;
+  }
+  #extInfoWindow_coda_tl{
+    width: 19px;
+    height: 15px;
+    background: url('../images/bubble/tl.png') top left no-repeat transparent;
+  }
+  #extInfoWindow_coda_t{
+    background: url('../images/bubble/t.png') top left repeat-x transparent;
+  }
+  #extInfoWindow_coda_tr{
+    width: 19px;
+    height: 15px;
+    background: url('../images/bubble/tr.png') top right no-repeat transparent;
+  }
+  * html #extInfoWindow_coda_tr{
+    background-image:none;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bubble/tr.png', sizingMethod='crop');
+  }
+  #extInfoWindow_coda_l{
+    background: url('../images/bubble/l.png') top left repeat-y transparent;
+    width: 19px;
+  }
+  #extInfoWindow_coda_r{
+    background: url('../images/bubble/r.png') top right repeat-y transparent;
+    width: 19px;
+  }
+  #extInfoWindow_coda_bl{
+    width: 19px;
+    height: 29px;
+    background: url('../images/bubble/bl.png') top left no-repeat transparent;
+  }
+  * html #extInfoWindow_coda_bl{
+    background-image:none;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bubble/bl.png', sizingMethod='crop');
+  }
+  #extInfoWindow_coda_b{
+    background: url('../images/bubble/b.png') bottom left repeat-x transparent;
+  }
+  #extInfoWindow_coda_br{
+    width: 19px;
+    height: 29px;
+    background: url('../images/bubble/br.png') top left no-repeat transparent;
+  }
+  * html #extInfoWindow_coda_br{
+    background-image:none;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bubble/br.png', sizingMethod='crop');
+  }
+  #extInfoWindow_coda_close{
+    width: 20px;
+    height: 20px;
+    background: url('../images/bubble/close_round_red2.png') top left no-repeat transparent;
+    cursor: pointer;
+  }
+  * html #extInfoWindow_coda_close{
+    background-image:none;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bubble/close_round_red2.png', sizingMethod='crop');
+  }
+  #extInfoWindow_coda_beak{
+      width: 30px;
+    height: 29px;
+    background: url('../images/bubble/beak.png') top left no-repeat transparent;
+  }
+  * html #extInfoWindow_coda_beak{
+    background-image:none;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bubble/beak.png', sizingMethod='crop');
+  }
+  
+  
+  /* custom info window for Services*/
+  
+  div.gs-directions-to-from, div.gs-directions {
+    display: none;
+  }
+  
+  /* Property List section */
+  
+  /* Sort styles*/
+  div.PropertySort label{
+    float:left;
+    line-height: 18px; 
+    margin-top: 0px;
+    padding-right: 10px;
+  }
+  
+  /* property count styles */
+  
+  span.totalCount {
+    font-weight: bold;
+  }
+  
+  div.PropertyShowList ul {
+    float:right;
+    margin-top: -31px; 
+    list-style: none;
+  }
+  
+  div.PropertyShowList ul li {
+    float:left;
+  }
+  
+  div.PropertyShowList ul li a.selected {
+    font-size: bold;
+    text-decoration: underline;
+  }
+  
+  #gmapSearchList div.gmapSearchProperty {
+    float:left;
+    width: 47%;
+    padding: 5px;
+    margin: 5px;
+  
+  }
+  
+  #gmapSearchList div.odd {
+    background-color: #E8F5F8;
+  }
+  
+  #gmapSearchList ul.action {
+    float: right;
+    list-style: none;
+    padding-right: 10px;  
+  }
+  
+  
+  /* custom badge for group icon of property */
+  div.badge {
+    margin-top:-14px;
+    margin-left: 12px;
+  }
+  div.badge div.text {
+    color: white;
+    font-size: 10px;
+    display: inline;
+    background-color: #CA0711;
+    border: 2px solid white;
+    padding: 1px 3px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+  }
+  
+  /**
+   * Main loading overlay
+   */
+  #gmapMainLoading {
+      left:42%;
+    position:absolute;
+    top:42%;
+       text-align:center;
+       border:1px solid #ccc;
+       background:#ffffff url(/../../base_imgs/loading.gif) no-repeat center center;
+        width:138px;
+        height:94px;
+  }
+  
+  #gmapMainLoading h2{
+      margin:10px 0 40px;
+  }
+  
+  
+  /*----------------------Vow Styles Update----------------------
+   * -----------------------------------------------------------*/
+  /*----------------Map Search List----------------*/
+  .property_map_item.cls_hidden > div.cls_hidden {
+      position: absolute;
+      bottom: -14px;
+      width: 100%;
+      background-color: #c50a1b;
+      padding: 2em 0 1.9em;
+      z-index: 11;
+  }
+  .property_map_item.cls_hidden .gmap_img_link img.status {
+      display: none;
+  }
+  .property_map_item.cls_hidden .gmap_img_link {
+      position: relative;
+  }
+  .property_map_item.cls_hidden .gmap_img_link:after {
+      content: '';
+      display: block;
+      background: url(../images/vow_locker.png) no-repeat center center;
+      z-index: 99;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 30%;
+      height: 57%;
+      background-size: contain;
+      transform: translate(-50%, -50%);
+  }
+  .property_map_item.cls_hidden .gmap_img_link img {
+      margin-top: 0;
+      -webkit-filter: blur(2px); /* Prefixed CSS3 blur filters */
+      -moz-filter: blur(2px); 
+      -o-filter: blur(2px); 
+      -ms-filter: blur(2px); 
+      filter: url(filter.svg#blur); /* Firefox needs SVG */
+      filter: blur(2px);
+      filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='2'); /* IE lte 9 */	
+  }
+  .property_map_item.cls_hidden dl.price_property_map,
+  .property_map_item.cls_hidden li.view_details_map_page,
+  .property_map_item.cls_hidden li.features_sheet_map_page,
+  .property_map_item.cls_hidden .street_view_map_page {
+      -webkit-filter: blur(3px); /* Prefixed CSS3 blur filters */
+      -moz-filter: blur(3px); 
+      -o-filter: blur(3px); 
+      -ms-filter: blur(3px); 
+      filter: url(filter.svg#blur); /* Firefox needs SVG */
+      filter: blur(3px);
+      filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3'); /* IE lte 9 */	
+  }
+  #gmapSearch2 .property_map_item.cls_hidden {
+      font-stretch: normal;
+  }
+  /*----------------IE Fixes----------------*/
+  body.overlayIE #gmapSearchList .property_map_item.cls_hidden:before {
+      opacity: 0.6;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-color: #000;
+      z-index: 1;
+  }
+  body.overlayIE #gmapSearchList .property_map_item.cls_hidden dl,
+  body.overlayIE #gmapSearchList .property_map_item.cls_hidden ul,
+  body.overlayIE #gmapSearchList .property_map_item.cls_hidden .viewStreet,
+  body.overlayIE #gmapSearchList .property_map_item.cls_hidden dl.price_property_map, 
+  body.overlayIE #gmapSearchList .property_map_item.cls_hidden li.view_details_map_page, 
+  body.overlayIE #gmapSearchList .property_map_item.cls_hidden li.features_sheet_map_page,
+  body.overlayIE #gmapSearchList .property_map_item.cls_hidden div.map_data a,
+  body.overlayIE #gmapSearchList .property_map_item.cls_hidden li a,
+  body.overlayIE #gmapSearchList .property_map_item.cls_hidden h2 a {
+      color: rgba(216,216,215,.4) !important;
+      text-shadow: 0 0 30px rgba(0,0,0,1);
+  }
+  
+  /*----------------Map Search Bubble----------------*/
+  #BubbleInfo .gmapSearchProperty.cls_hidden .price,
+  #BubbleInfo .gmapSearchProperty.cls_hidden .address,
+  #BubbleInfo .gmapSearchProperty.cls_hidden .address + p,
+  #BubbleInfo .gmapSearchProperty.cls_hidden p.view_details_map_page,
+  #BubbleInfo .gmapSearchProperty.cls_hidden .viewStreet a.street_view_map_page,
+  div.gmapSearchProperty.cls_hidden div.picture div.pSaleStatus img {
+      display: none;
+  }
+  div.gmapSearchProperty.cls_hidden div.picture div.pSaleStatus {
+      border: none;
+  }
+  div.gmapSearchProperty.cls_hidden div.left {
+      float: none;
+  }
+  #BubbleInfo .gmapSearchProperty.cls_hidden {
+      background-color: #c50a1b;
+  }
+  #BubbleInfo div.gmapSearchProperty.cls_hidden .left {
+      margin: 1em 0 1.5em;
+  }
+  #BubbleInfo div.gmapSearchProperty.cls_hidden div.picture img.pImage {
+      top:0;
+      margin: 0;
+      -webkit-filter: blur(3px); /* Prefixed CSS3 blur filters */
+      -moz-filter: blur(3px); 
+      -o-filter: blur(3px); 
+      -ms-filter: blur(3px); 
+      filter: url(filter.svg#blur); /* Firefox needs SVG */
+      filter: blur(3px);
+      filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3'); /* IE lte 9 */	
+  }
+  #BubbleInfo div.gmapSearchProperty.cls_hidden .viewStreet {
+      height: 0;
+  }
+  #BubbleInfo div.gmapSearchProperty.cls_hidden .cls_hidden_message span.vow_locker strong {
+      font-weight: 900;
+  }
+  #BubbleInfo div.gmapSearchProperty.cls_hidden div.picture:after {
+      content: '';
+      display: block;
+      background: url(../images/vow_locker.png) no-repeat;
+      z-index: 99;
+      position: absolute;
+      top: 32px;
+      left: calc(50% - 25px);
+      width: 50px;
+      height: 62px;
+      background-size: contain;
+  }
+  
+  /* Unclickable links */
+  .property_map_item.cls_hidden li a,
+  .property_map_item.cls_hidden a.street_view_map_page,
+  .property_map_item.cls_hidden h2 a {
+      pointer-events: none;
+  }
