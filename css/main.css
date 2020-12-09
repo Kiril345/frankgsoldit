@@ -208,7 +208,7 @@ p,input,button,h1,h2,h3,h4,h5,h6,span,div,li,ul{
     content: '';
     top: auto;
     bottom: 85%;
-    background: url('/modules/free_home_valuation/images/crown.png') no-repeat;
+    background: url('../images/crown.png') no-repeat;
     width: 100%;
     height: 40px;
     background-size: 100% auto;
