@@ -1,277 +1,221 @@
 <!DOCTYPE html>
-<html class="step-1" lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-      <link rel="stylesheet" href="css/main.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">              
-      <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
-      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <script src="js/main.js" defer></script>
-  </head>
-  <body class="precon"> 
-    <div class="main_content_precon">
-      <div class="wrapper-form-area">
-        <div class="landing-form-wrapper">
-          <div class="container">
-            <div class="row">
-              <div class="precon-form-wrapper">
-                <div class="col-sm-12">
-                  <form action=""  method="post" id="" class="incom-js">
-                    <div>
-                      <input type="hidden" name="edit[full_path]" id="edit-full_path" value=""  />
-                      <input type="hidden" name="edit[form_id]" id="" value=""  />
-                      <input type="hidden" name="edit[form_tm]" id="edit-form_tm" value=""  />
-                      <input type="hidden" name="edit[form_firsttm]" id="edit-form_firsttm" value="0"  />
-                      <div class="step1">
-                        <div class="form_heading col-sm-12">
-                          <h1 class="text-center whitetext">Get instant <strong>VIP</strong> access to 100s of new condo developments across the GTA</h1>
-                        </div>
-                        <div class="description col-sm-12">
-                          <p class="text-center whitetext">Use our Advanced Smart Search to discover hidden gems across GTA that your average REALTOR cannot access</p>
-                        </div>
-                        <div class="search-wrapper">
-                          <div class="form-item ">
-                            <input type="text" maxlength="128" name="edit[address]" id="edit-address"  size="60" value="" class="form-text lead_form_address" placeholder="Enter a city name here" />
-                          </div>
-                          <input type="hidden" name="edit[postal_code]" id="edit-postal_code" value=""  class="postal-code-input" />
-                          <input type="hidden" name="edit[street_no]" id="edit-street_no" value=""  class="street-no-input" />
-                          <input type="hidden" name="edit[latlng]" id="edit-latlng" value=""  class="lat_lng_location" />
-                          <input type="hidden" name="edit[address_vars]" id="edit-address_vars" value=""  class="address_vars postal-code-input" />
-                          <input type="hidden" name="edit[city]" id="edit-city" value=""  class="city-input" />
-                          <input type="hidden" name="edit[township]" id="edit-township" value=""  class="township-input" />
-                          <input type="hidden" name="edit[province]" id="edit-province" value=""  class="province-input" />
-                          <input type="hidden" name="edit[country]" id="edit-country" value=""  class="country-input" />
-                          <input type="hidden" name="edit[street_name]" id="edit-street_name" value=""  class="street-name-input" />
-                          <input type="hidden" name="edit[address_values]" id="edit-address_values" value=""  />
-                          <input type="hidden" name="edit[lead_creation_backend]" id="edit-lead_creation_backend" value="1607524203"  />
-                          <input type="hidden" name="edit[lead_creation_form_id]" id="edit-lead_creation_form_id" value=""  />
-                          <input type="hidden" name="edit[lead_creation_ajax_done]" id="edit-lead_creation_ajax_done" value="0"  />
-                          <div class="search_button btn-disable">
-                            <input type="submit" name="op" value="Build"  class="form-submit" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="map-form container-fluid">
-                        <div class="row">
-                          <div class="map-wrapper col-md-6">
-                            <div id="map-div"></div>
-                            <div id="streetview2"></div>
-                            <div class="map_filters">
-                              <div id="mapTools" class="map_tools">
-                                <div class="controls">
-                                  <a href="#" name="school" class="icon school"><i class="pre-icon icon-school">&#xe80c;</i><span class="tooltiptext">schools</span></a>
-                                  <a href="#" name="park" class="icon parks"><i class="pre-icon icon-park">&#xe812;</i><span class="tooltiptext">parks</span></a>
-                                  <a href="#" name="hospital" class="icon hospitals"><i class="pre-icon icon-hospital">&#xe805;</i><span class="tooltiptext">hospitals</span></a>
-                                  <a href="#" name="grocery store" class="icon grocerystores"><i class="pre-icon icon-shop">&#xe811;</i><span class="tooltiptext">grocery stores</span></a>
-                                  <a href="#" name="restaurant" class="icon restaurants"><i class="pre-icon icon-restaurant">&#xe80a;</i><span class="tooltiptext">restaurants</span></a>
-                                  <a href="#" name="shopping centre" class="icon shoppingcentres"><i class="pre-icon icon-walk">&#xe80d;</i><span class="tooltiptext">shopping centres</span></a>
-                                  <a href="#" name="bank" class="icon banks"><i class="pre-icon icon-bank">&#xe801;</i><span class="tooltiptext">banks</span></a>
-                                  <a href="#" name="gas" class="icon gas"><i class="pre-icon icon-gas-station">&#xe80f;</i><span class="tooltiptext">gas stations</span></a>
-                                  <a href="#" name="attraction" class="icon attractions"><i class="pre-icon icon-camera">&#xe810;</i><span class="tooltiptext">attractions</span></a> 
-                                  <a href="#" name="coffee" class="icon coffee"><i class="pre-icon icon-cafe">&#xe803;</i><span class="tooltiptext">cafes</span></a>
-                                  <a href="#" name="day care" class="icon daycares"><i class="pre-icon icon-day-care">&#xe804;</i><span class="tooltiptext">day care services</span></a>        
-                                  <a href="#" name="bus" class="icon bus"><i class="pre-icon icon-bus-station">&#xe802;</i><span class="tooltiptext">bus stations</span></a> 
-                                </div>  
-                                <a href="javascript:void(0);" class="open_amenities"><i class="pre-icon icon-iicon">&#xe806;</i></a>    
-                              </div>
-                            <div id="mapTypeControl2" class="map_controls">
-                              <div class="controls">
-                                <a href="#" name="streetviewlink" class="icon streetviewlink"><i class="pre-icon icon-street-view">&#xe814;</i><span class="tooltiptext">street view</span></a>
-                                <a href="#" name="maplink" class="icon selected"><i class="pre-icon icon-map-view">&#xe807;</i><span class="tooltiptext">map view</span></a>
-                                <a href="#" name="satellite" class="icon satellite"><i class="pre-icon icon-satellite">&#xe80e;</i><span class="tooltiptext">satellite</span></a> 
-                                <a href="#" name="terrain" class="icon terrain"><i class="pre-icon icon-terrain">&#xe80b;</i><span class="tooltiptext">terrain view</span></a>
-                              </div>  
-                              <a href="javascript:void(0);" class="open_controls"><i class="pre-icon icon-map-view">&#xe807;</i></a>
-                            </div>
-                            </div>
-                            <div class="message-number-found">Displaying <strong class="prop-count" id="prop-count-id">NNN</strong> new condo developments in <strong class="city-name" id="city-name-id">%CITY%</strong><em>Zoom out to view more</em>
-                              <a class="results-popup-closer" href="#"><img src="../images/x-white.svg" /></a>
-                            </div>
-                          </div>
-                          <div class="form-wrapper col-md-6">
-                            <div class="back-to-map">
-                              <a href="#">Back</a>
-                            </div>
-                            <div class="centerer">
-                              <h1 class="text-center whitetext">You are almost done!</h1>
-                              <p class="text-center whitetext">Create your FREE VIP account to have instant access to our database.</p>
-                              <div class="form-elements-wrapper">
-                                <div class="fname-field">
-                                  <div class="form-item Name">
-                                    <label for="edit-fname">Name: </label>
-                                    <input type="text" maxlength="128" name="edit[fname]" id="edit-fname"  size="60" value="" placeholder="Full Name" class="form-text" />
-                                  </div> 
-                                  <span id="fname-error"></span>
-                                </div>
-                              <div class="lname-field">
-                                <div class="form-item Last-Name">
-                                  <label for="edit-lname">Last Name: </label>
-                                  <input type="text" maxlength="128" name="edit[lname]" id="edit-lname" size='60' value="" placeholder="Last Name" class="form-text" />
-                                </div>
-                                <span id="lname-error"></span>
-                              </div>
-                              <div class="email-field">
-                                <div class="form-item E-mail-Address">
-                                  <label for="edit-email">E-mail Address: </label>
-                                  <input type="text" maxlength="128" name="edit[email]" id="edit-email"  size="60" value="" placeholder="E-mail Address" class="form-text" />
-                                </div>
-                                <span id="email-error"></span>
-                              </div>
-                              <div class="phone-field">
-                                <div class="form-item Phone">
-                                  <label for="edit-phone">Phone: </label>
-                                  <input type="text" maxlength="128" name="edit[phone]" id="edit-phone"  size="60" value="" placeholder="Phone Number" pattern="^\d{4}-\d{3}-\d{4}$" class="form-text" />
-                                </div>
-                                <span id="phone-error"></span>
-                              </div>
-                              <div class="search_button">
-                                <input type="submit" name="op" value="GET ACCESS NOW"  class="form-submit" />
-                              </div>
-                                </div>
-                              <p class="text-center whitetext text-uform">It only takes 10 seconds!</p>
-                            </div>
-                            <span class="disclaimer-floating">
-                              <a class="disclaimer-link" href="#">Disclaimer</a>
-                              <p class="disclaimer-content">By entering my contact information I give my express consent to be contacted by 'Frank  Giralico, Capital North Realty Corporation Brokerage' 
-                              and or real estate salespeople on behalf of 'Capital North Realty Corporation Brokerage' to discuss potential services.
-                              </p>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
+<html class="step-1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">              
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/map-search.css">
+    <script src="js/wow.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body class="precon"> 
+    <div class="main_content_precon ">
+                <div class="wrapper-form-area">
+                    <div class="landing-form-wrapper">
+                      <div class="container">
+                      <div class="row">
+                        <div class="precon-form-wrapper">
+                          <div class="col-sm-12"><form action="/landing/pre-construction-condos?gclid=Cj0KCQiAwMP9BRCzARIsAPWTJ_HZIziZ785bolWfPnum1ELrAdymr7rQ7PzAnVovHuF-JhXTzJvKnLMaAuU9EALw_wcB"  method="post" id="pre_construction_landing_form" class=" incom-js">
+<div><input type="hidden" name="edit[full_path]" id="edit-full_path" value="https://www.frankgsoldit.ca/landing/pre-construction-condos?gclid=Cj0KCQiAwMP9BRCzARIsAPWTJ_HZIziZ785bolWfPnum1ELrAdymr7rQ7PzAnVovHuF-JhXTzJvKnLMaAuU9EALw_wcB"  />
+<input type="hidden" name="edit[form_id]" id="edit-pre-construction-landing-form" value="pre_construction_landing_form"  />
+<input type="hidden" name="edit[form_tm]" id="edit-form_tm" value="1607524203|aAf-p-iRzgOPm940UPn6ciW4MC1tmZEPYfFKJt_lPsY"  />
+<input type="hidden" name="edit[form_firsttm]" id="edit-form_firsttm" value="0"  />
+<div class="step1">
+            <div class="form_heading col-sm-12">
+              <h1 class="text-center whitetext">Get instant <strong>VIP</strong> access to 100s of new condo developments across the GTA</h1>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="features-columns">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-6 text-center feature subtext">
-            <span class="stat"><em class="counter" data-total="470">0</em>+</span>Condos in Database
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 text-center feature subtext">
-            <span class="stat"><em class="counter" data-total="106">0</em> K</span>Monthly search results
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 text-center feature subtext">
-            <span class="stat"><em class="counter" data-total="10">0</em>+</span>New Developments added Bi-Weekly
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 text-center feature subtext">
-            <span class="stat"><em class="counter" data-total="2">0</em> MIN</span>Avg. Time to gain access
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="why-use">
-      <div class="container">
-        <div class="row header-row">
-          <h2 class="heading text-center heading-d">Why use our search tool?</h2>
-          <p class="support text-center subtext">Here are just a few reasons</p>
-        </div>
-        <div class="row content-row">
-          <div class="col-md-12 col-lg-4 text-center reason-time reason-item">
-            <img src="images/clock.png" />
-            <h3 class="heading-d">Instant Access</h3>
-            <p class="subtext">Immediately access 100s of preconstruction condo projects in the GTA within minutes!</p>
-          </div>
-          <div class="col-md-12 col-lg-4 text-center reason-exclusive reason-item">
-            <img src="images/lock.png" />
-            <h3 class="heading-d">Exclusive VIP Condos</h3>
-            <p class="subtext">Discover invaluable information about preconstruction condos before anyone else!</p>
-          </div>
-          <div class="col-md-12 col-lg-4 text-center reason-free reason-item">
-            <img src="images/free-img.png" />
-            <h3 class="heading-d">100% Free</h3>
-            <p class="subtext">Our exclusive Smart Search Tool is completely free! Take advantage of this free service while it’s available!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="how-work">
-      <div class="container">
-        <div class="row hw-header">
-          <h2 class="heading-d text-center">How does it work?</h2>
-          <p class="subtext text-center">GET QUICK RESULTS IN 3 EASY STEPS</p>
-        </div>
-        <div class="row explain-row">
-          <div class="col-sm-4 offset-lg-1 hw-explain reasons-animation first">
-            <h3 class="heading-d">Choose your local area.</h3>
-            <p class="subtext">Type in the city where you'd like to start your search.</p>
-          </div>
-          <div class="col-sm-4 col-lg-2 hw-number reasons-animation second">
-            <span>
-              <p>1</p>
-            </span>
-          </div>
-        </div>
-        <div class="row explain-row">
-          <div class="col-lg-2 col-sm-4 offset-lg-5 offset-sm-4  hw-number reasons-animation third">
-            <span>
-              <p>2</p>
-            </span>
-          </div>
-          <div class="col-sm-4 hw-explain reasons-animation fourth">
-            <h3 class="heading-d">Create a VIP Account</h3>
-            <p class="subtext">Add your VIP account details. This makes it easier for you to re-access saved searches, bookmarked projects, and more!</p>
-          </div>
-        </div>
-        <div class="row explain-row">
-          <div class="col-sm-4 offset-lg-1 hw-explain reasons-animation sixth">
-            <h3 class="heading-d">View our database.</h3>
-            <p class="subtext">Access 100s of preconstruction condo projects instantly!</p>
-          </div>
-          <div class="col-lg-2 col-sm-4 hw-number reasons-animation fifth">
-            <span>
-              <p>3</p>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="wrapper-form-area bottom-form">
-      <div class="landing-form-wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="precon-form-wrapper">
-              <div class="col-sm-12">
-                <div class="step1">
-                  <div class="form_heading col-sm-12">
-                    <h1 class="text-center whitetext">Get instant <strong>VIP</strong> access to 100s of new condo developments across the GTA</h1>
-                  </div>
-                  <div class="description col-sm-12">
-                    <p class="text-center whitetext">Use our Advanced Smart Search to discover hidden gems across GTA that your average REALTOR cannot access</p>
-                  </div>
-                  <div class="search-wrapper">
-                    <div class="form-item ">
-                      <input maxlength="128" name="address-2" id="address-2" size="60" value="" class="form-text lead_form_address" placeholder="Enter a city name here" type="text">
+            <div class="description col-sm-12">
+              <p class="text-center whitetext">Use our Advanced Smart Search to discover hidden gems across GTA that your average REALTOR cannot access</p>
+            </div>
+            <div class="search-wrapper"><div class="form-item ">
+<input type="text" maxlength="128" name="edit[address]" id="edit-address"  size="60" value="" class="form-text lead_form_address" placeholder="Enter a city name here" />
+</div>
+<input type="hidden" name="edit[postal_code]" id="edit-postal_code" value=""  class="postal-code-input" />
+<input type="hidden" name="edit[street_no]" id="edit-street_no" value=""  class="street-no-input" />
+<input type="hidden" name="edit[latlng]" id="edit-latlng" value=""  class="lat_lng_location" />
+<input type="hidden" name="edit[address_vars]" id="edit-address_vars" value=""  class="address_vars postal-code-input" />
+<input type="hidden" name="edit[city]" id="edit-city" value=""  class="city-input" />
+<input type="hidden" name="edit[township]" id="edit-township" value=""  class="township-input" />
+<input type="hidden" name="edit[province]" id="edit-province" value=""  class="province-input" />
+<input type="hidden" name="edit[country]" id="edit-country" value=""  class="country-input" />
+<input type="hidden" name="edit[street_name]" id="edit-street_name" value=""  class="street-name-input" />
+<input type="hidden" name="edit[address_values]" id="edit-address_values" value=""  />
+<input type="hidden" name="edit[lead_creation_backend]" id="edit-lead_creation_backend" value="1607524203"  />
+<input type="hidden" name="edit[lead_creation_form_id]" id="edit-lead_creation_form_id" value="pre_construction_landing_form"  />
+<input type="hidden" name="edit[lead_creation_ajax_done]" id="edit-lead_creation_ajax_done" value="0"  />
+<div class="search_button btn-disable"><input type="submit" name="op" value="Build"  class="form-submit" />
+</div></div></div><div class="map-form container-fluid"><div class="row"><div class="map-wrapper col-md-6"><div id="map-div"></div><div id="streetview2"></div><div class="map_filters">
+    <div id="mapTools" class="map_tools">
+            <div class="controls">
+                <a href="#" name="school" class="icon school"><i class="pre-icon icon-school">&#xe80c;</i><span class="tooltiptext">schools</span></a>
+                <a href="#" name="park" class="icon parks"><i class="pre-icon icon-park">&#xe812;</i><span class="tooltiptext">parks</span></a>
+                <a href="#" name="hospital" class="icon hospitals"><i class="pre-icon icon-hospital">&#xe805;</i><span class="tooltiptext">hospitals</span></a>
+                <a href="#" name="grocery store" class="icon grocerystores"><i class="pre-icon icon-shop">&#xe811;</i><span class="tooltiptext">grocery stores</span></a>
+                <a href="#" name="restaurant" class="icon restaurants"><i class="pre-icon icon-restaurant">&#xe80a;</i><span class="tooltiptext">restaurants</span></a>
+                <a href="#" name="shopping centre" class="icon shoppingcentres"><i class="pre-icon icon-walk">&#xe80d;</i><span class="tooltiptext">shopping centres</span></a>
+                <a href="#" name="bank" class="icon banks"><i class="pre-icon icon-bank">&#xe801;</i><span class="tooltiptext">banks</span></a>
+                <a href="#" name="gas" class="icon gas"><i class="pre-icon icon-gas-station">&#xe80f;</i><span class="tooltiptext">gas stations</span></a>
+                <a href="#" name="attraction" class="icon attractions"><i class="pre-icon icon-camera">&#xe810;</i><span class="tooltiptext">attractions</span></a> 
+                <a href="#" name="coffee" class="icon coffee"><i class="pre-icon icon-cafe">&#xe803;</i><span class="tooltiptext">cafes</span></a>
+                <a href="#" name="day care" class="icon daycares"><i class="pre-icon icon-day-care">&#xe804;</i><span class="tooltiptext">day care services</span></a>        
+                <a href="#" name="bus" class="icon bus"><i class="pre-icon icon-bus-station">&#xe802;</i><span class="tooltiptext">bus stations</span></a> 
+            </div>  
+            <a href="javascript:void(0);" class="open_amenities"><i class="pre-icon icon-iicon">&#xe806;</i></a>    
+            </div>
+            <div id="mapTypeControl2" class="map_controls">
+                <div class="controls">
+                <a href="#" name="streetviewlink" class="icon streetviewlink"><i class="pre-icon icon-street-view">&#xe814;</i><span class="tooltiptext">street view</span></a>
+                <a href="#" name="maplink" class="icon selected"><i class="pre-icon icon-map-view">&#xe807;</i><span class="tooltiptext">map view</span></a>
+                <a href="#" name="satellite" class="icon satellite"><i class="pre-icon icon-satellite">&#xe80e;</i><span class="tooltiptext">satellite</span></a> 
+                <a href="#" name="terrain" class="icon terrain"><i class="pre-icon icon-terrain">&#xe80b;</i><span class="tooltiptext">terrain view</span></a>
+            </div>  
+            <a href="javascript:void(0);" class="open_controls"><i class="pre-icon icon-map-view">&#xe807;</i></a>
+            </div>
+    </div><div class="message-number-found">Displaying <strong class="prop-count" id="prop-count-id">NNN</strong> new condo developments in <strong class="city-name" id="city-name-id">%CITY%</strong><em>Zoom out to view more</em><a class="results-popup-closer" href="#"><img src="../images/x-white.svg" /></a></div></div><div class="form-wrapper col-md-6"><div class="back-to-map"><a href="#">Back</a></div><div class="centerer"><h1 class="text-center whitetext">You are almost done!</h1><p class="text-center whitetext">Create your FREE VIP account to have instant access to our database.</p><div class="form-elements-wrapper"><div class="fname-field"><div class="form-item Name">
+<label for="edit-fname">Name: </label>
+<input type="text" maxlength="128" name="edit[fname]" id="edit-fname"  size="60" value="" placeholder="Full Name" class="form-text" />
+</div>
+<span id="fname-error"></span></div><div class="lname-field"><div class="form-item Last-Name">
+<label for="edit-lname">Last Name: </label>
+<input type="text" maxlength="128" name="edit[lname]" id="edit-lname" size='60' value="" placeholder="Last Name" class="form-text" />
+</div>
+<span id="lname-error"></span></div><div class="email-field"><div class="form-item E-mail-Address">
+<label for="edit-email">E-mail Address: </label>
+<input type="text" maxlength="128" name="edit[email]" id="edit-email"  size="60" value="" placeholder="E-mail Address" class="form-text" />
+</div>
+<span id="email-error"></span></div><div class="phone-field  "><div class="form-item Phone">
+<label for="edit-phone">Phone: </label>
+<input type="text" maxlength="128" name="edit[phone]" id="edit-phone"  size="60" value="" placeholder="Phone Number" pattern="^\d{4}-\d{3}-\d{4}$" class="form-text" />
+</div>
+<span id="phone-error"></span></div><div class="search_button"><input type="submit" name="op" value="GET ACCESS NOW"  class="form-submit" />
+</div></div><p class="text-center whitetext text-uform">It only takes 10 seconds!</p></div><span class="disclaimer-floating"><a class="disclaimer-link" href="#">Disclaimer</a><p class="disclaimer-content">By entering my contact information I give my express consent to be contacted by 'Frank  Giralico, Capital North Realty Corporation Brokerage' 
+and or real estate salespeople on behalf of 'Capital North Realty Corporation Brokerage' to discuss potential services.</p></span></div></div></div>
+</div></form>
+</div>  </div>
+                      </div>
+                      </div>
                     </div>
-                    <div class="search_button btn-disable">
-                      <input name="op" value="Build" class="form-button" type="button">
+                </div>
+                <div class="features-columns">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-6 col-sm-6 text-center feature subtext">
+                        <span class="stat"><em class="counter" data-total="470">0</em>+</span>Condos in Database
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-6 text-center feature subtext">
+                      <span class="stat"><em class="counter" data-total="106">0</em> K</span>Monthly search results
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-6 text-center feature subtext">
+                      <span class="stat"><em class="counter" data-total="10">0</em>+</span>New Developments added Bi-Weekly
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-6 text-center feature subtext">
+                      <span class="stat"><em class="counter" data-total="2">0</em> MIN</span>Avg. Time to gain access
+                      </div>
                     </div>
                   </div>
                 </div>
+                <div class="why-use">
+                  <div class="container">
+                    <div class="row header-row">
+                    <h2 class="heading text-center heading-d">Why use our search tool?</h2>
+                    <p class="support text-center subtext">Here are just a few reasons</p>
+                  </div>
+                  <div class="row content-row">
+                    <div class="col-md-12 col-lg-4 text-center reason-time reason-item wow">
+                      <img src="images/clock.png" />
+                      <h3 class="heading-d">Instant Access</h3>
+                      <p class="subtext">Immediately access 100s of preconstruction condo projects in the GTA within minutes!</p>
+                    </div>
+                    <div class="col-md-12 col-lg-4 text-center reason-exclusive reason-item wow wow-2">
+                      <img src="images/lock.png" />
+                      <h3 class="heading-d">Exclusive VIP Condos</h3>
+                      <p class="subtext">Discover invaluable information about preconstruction condos before anyone else!</p>
+                    </div>
+                    <div class="col-md-12 col-lg-4 text-center reason-free reason-item wow wow-3">
+                      <img src="images/free-img.png" />
+                      <h3 class="heading-d">100% Free</h3>
+                      <p class="subtext">Our exclusive Smart Search Tool is completely free! Take advantage of this free service while it’s available!</p>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="how-work">
+                  <div class="container">
+                    <div class="row hw-header">
+                      <h2 class="heading-d text-center">How does it work?</h2>
+                      <p class="subtext text-center">GET QUICK RESULTS IN 3 EASY STEPS</p>
+                    </div>
+                    <div class="row explain-row ">
+                      <div class="col-sm-4 offset-lg-1 hw-explain reasons-animation first">
+                        <h3 class="heading-d">Choose your local area.</h3>
+                        <p class="subtext">Type in the city where you'd like to start your search.</p>
+                      </div>
+                      <div class="col-sm-4 col-lg-2 hw-number reasons-animation second">
+                        <span>
+                          <p>1</p>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="row explain-row">
+                      <div class="col-lg-2 col-sm-4 offset-lg-5 offset-sm-4  hw-number reasons-animation third">
+                        <span>
+                          <p>2</p>
+                        </span>
+                      </div>
+                      <div class="col-sm-4 hw-explain reasons-animation fourth">
+                        <h3 class="heading-d">Create a VIP Account</h3>
+                        <p class="subtext">Add your VIP account details. This makes it easier for you to re-access saved searches, bookmarked projects, and more!</p>
+                      </div>
+                    </div>
+                    <div class="row explain-row">
+                      <div class="col-sm-4 offset-lg-1 hw-explain reasons-animation sixth">
+                        <h3 class="heading-d">View our database.</h3>
+                        <p class="subtext">Access 100s of preconstruction condo projects instantly!</p>
+                      </div>
+                      <div class="col-lg-2 col-sm-4 hw-number reasons-animation fifth">
+                        <span>
+                          <p>3</p>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wrapper-form-area bottom-form">
+                    <div class="landing-form-wrapper">
+                        <div class="container">
+                          <div class="row">
+                            <div class="precon-form-wrapper">
+                              <div class="col-sm-12">
+                              <div class="step1">
+                                <div class="form_heading col-sm-12">
+                                    <h1 class="text-center whitetext">Get instant <strong>VIP</strong> access to 100s of new condo developments across the GTA</h1>
+                                </div>
+                                <div class="description col-sm-12">
+                                    <p class="text-center whitetext">Use our Advanced Smart Search to discover hidden gems across GTA that your average REALTOR cannot access</p>
+                                </div>
+                                <div class="search-wrapper">
+                                  <div class="form-item ">
+                                    <input maxlength="128" name="address-2" id="address-2" size="60" value="" class="form-text lead_form_address" placeholder="Enter a city name here" type="text">
+                                  </div>
+                                    <div class="search_button btn-disable"><input name="op" value="Build" class="form-button" type="button">
+                                    </div>
+                                  </div>
+                                  </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                </div>
+              <footer>
+              <div class="centerer">
+                    <p class="text-center info">Frank Giralico Sales Representative, Capital North Realty Corporation Brokerage , OFFICE: 416-798-7777  Direct: 416-508-0689</p>
+                    <p class="text-center links"><a href="/terms-of-service" target="_blank">Terms of Service </a> &#124; <a href="/privacy-policy" target="_blank">Privacy Policy</a> &#124; <a href="https://www.incomrealestate.com/real_estate_agents_sales_representatives.html#leads" target="_blank">Real Estate Leads</a> by <a href="https://www.incomrealestate.com/" target="_blank">InCom Real Estate<span id="incom-logo"><img src="images/InComNewLogo-grey.png" alt="Incom logo" /></span></a></p>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-                
-    <footer>
-      <div class="centerer">
-        <p class="text-center info">Frank Giralico Sales Representative, Capital North Realty Corporation Brokerage , OFFICE: 123-123-1234  Direct: 123-123-1234</p>
-        <p class="text-center links"><a href="#" target="_blank">Terms of Service </a> &#124; <a href="#" target="_blank">Privacy Policy</a> &#124; <a href="#" target="_blank">Real Estate Leads</a> by <a href="#" target="_blank">InCom Real Estate<span id="l-logo"><img src="images/InComNewLogo-grey.png" alt="logo" /></span></a></p>
-      </div>
     </footer>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </html>
