@@ -12,19 +12,6 @@ body{
 *, ::after, ::before {
     box-sizing: border-box;
 }
-
-
-@charset "UTF-8";
-@font-face {
-	font-family: 'pre-condo-font';
-	src: url('/modules/pre_construction_condo/fonts/pre-condo-font.eot?58074413');
-	src: url('/modules/pre_construction_condo/fonts/pre-condo-font.eot?58074413#iefix') format('embedded-opentype'),
-		url('/modules/pre_construction_condo/fonts/pre-condo-font.woff?58074413') format('woff'),
-		url('/modules/pre_construction_condo/fonts/pre-condo-font.ttf?58074413') format('truetype'),
-		url('/modules/pre_construction_condo/fonts/pre-condo-font.svg?58074413#pre-condo-font') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
 /* Incom Real Estate "Neighbourhood Buzzer" landing page style */
 .main_content_precon{
     overflow:hidden;
@@ -273,25 +260,11 @@ p,input,button,h1,h2,h3,h4,h5,h6,span,div,li,ul{
 .why-use .reason-item h3{
   margin-bottom:2rem;
 }
-.wow.animated{
+.why-use .show-reason{
   bottom:0px;
   -webkit-transition: all 0.7s ease-in;
   -moz-transition: all 0.7s ease-in;
   -o-transition: all 0.7s ease-in;
-  opacity: 1;
-}
-.wow-2.animated{
-  bottom:0px;
-  -webkit-transition: all 1s ease-in;
-  -moz-transition: all 1s ease-in;
-  -o-transition: all 1s ease-in;
-  opacity: 1;
-}
-.wow-3.animated{
-  bottom:0px;
-  -webkit-transition: all 1.3s ease-in;
-  -moz-transition: all 1.3s ease-in;
-  -o-transition: all 1.3s ease-in;
   opacity: 1;
 }
 .why-use .heading,
@@ -522,7 +495,7 @@ footer p a{
   max-width: 90%;
   margin: auto;
 }
-#incom-logo{
+#l-logo{
   display:inline-block;	
 }
 p.text-center.links {
