@@ -6,7 +6,7 @@ body{
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff
+    background-color: #fff;
 }
 
 *, ::after, ::before {
@@ -36,8 +36,67 @@ body{
 	height: calc(100vh - 65px);
 }
 .form-wrapper {
-	width: 50%;
+  width: 50%;
 }
+.form{
+  height: 300px;
+
+}
+.form-input {
+  margin-bottom: 25px;
+  width: 50%;
+  padding: 7px 16px;
+  border-radius: 30px;
+  border: 1px solid rgb(119, 119, 119);
+}
+.form-input[type="submit"]{
+  color: white;
+  background: #0d80b5;
+  border: transparent;
+  box-shadow: 0 0 10px 5px #489eb0;
+}
+.form-input[type="submit"]:hover{
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+  border: transparent;
+}
+.form-input[type="submit"]:active{
+  box-shadow: 0 0 10px 5px #489eb0;
+  border: transparent;
+}
+.form-input[type="submit"]:focus{
+  border: transparent;
+}
+.form-input:focus{
+  outline: none;
+  border: 1px solid #121213;
+  border-radius: 30px;
+}
+.message{
+  display: none;
+  box-shadow: 0 0 10px 5px #489eb0;
+  border-radius: 4px;
+  opacity: 0;
+  transition: all .5s;
+  position: fixed;
+  width: 400px;
+  height: 200px;
+  top:0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  background:#fff;
+  color: #212529;
+  z-index: 999999;
+}
+
+.message.active{
+  display: flex;
+}
+.message.show{
+  opacity: 1;
+}
+
 
 #map-div {
 	height: 100%;
@@ -171,9 +230,8 @@ p,input,button,h1,h2,h3,h4,h5,h6,span,div,li,ul{
   background-position: 0 100%;
 }
 .landing-form-wrapper .step1{
-  top: 20%;
+  margin-top: 60px;
   position: relative;
-  transform: translateY(-20%);
 }
 .precon-form-wrapper form > div{
   position:relative;
@@ -474,7 +532,7 @@ p,input,button,h1,h2,h3,h4,h5,h6,span,div,li,ul{
   z-index:15;
 }
 footer{
-  height:65px;
+  height:80px;
   overflow:hidden;
 }
 footer .centerer{
@@ -1628,7 +1686,6 @@ img[src*="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2.png"] {
   }
   .landing-form-wrapper .step1{
   	top: 25%;
-    transform: translateY(-25%);
   }
   .features-columns{
     padding: 3rem 0px 0px;
@@ -1887,7 +1944,6 @@ img[src*="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2.png"] {
   }
   .landing-form-wrapper .step1 {
     top: 25%;
-    transform: translateY(-25%);
   }
 }
 @media screen and (max-width:480px) and (max-height:900px){
@@ -1989,19 +2045,6 @@ margin: 0 auto;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   box-sizing: border-box;
-}
-#pin_form input[type="submit"]{
-  text-transform: capitalize;
-  background: #1cb94e;
-  font-size: 1.25rem;
-  width: 100%;
-  border: none;
-  border-radius: .2rem;
-  padding-top: .8rem;
-  padding-bottom: .8rem;
-  color:#fff;
-  box-sizing: border-box;
-  margin: 1rem 0;
 }
 .wrapper-pin .resend{
   display: block;
