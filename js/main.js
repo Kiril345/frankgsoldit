@@ -86,4 +86,27 @@
         });  
     }); //End of jQuery UI-specific functions
 })(jQuery);
-    
+
+const submit1 = document.querySelector('#submit1');
+const submit2 = document.querySelector('#submit2');
+const form1 = document.querySelector('#form-1');
+const form2 = document.querySelector('#form-2');
+const message = document.querySelector('.message');
+
+submit1.addEventListener('click', event => {
+    event.preventDefault();
+    form1.reset();
+    message.classList.add('active');
+    setTimeout(() => message.classList.add('show'), 100 );
+    setTimeout(() => message.classList.remove('show'), 1500 );
+    setTimeout(() => message.classList.remove('active'), 2000 );
+})
+
+submit2.addEventListener('click', event => {
+    event.preventDefault();
+    form2.reset();
+    message.classList.add('active');
+    setTimeout(() => message.classList.add('show'), 100 );
+    setTimeout(() => message.classList.remove('show'), 1500 );
+    setTimeout(() => message.classList.remove('active'), 2000 );
+})
