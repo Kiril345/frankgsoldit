@@ -2092,4 +2092,7 @@ margin: 0 auto;
   .wrapper-pin form {
       width: 90%;
   }
+  .form-input{
+    width:90%;
+  }
 }
